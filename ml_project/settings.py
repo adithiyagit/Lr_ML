@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-spmzg^nw7-j4(fsng_f(h%rkyf!lou1zu*d5$haa0@ix3dh(ll
 DEBUG = True
 
 ALLOWED_HOSTS = ['logisticregression-ckh8bnazgveqe9ca.centralus-01.azurewebsites.net']
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://logisticregression-ckh8bnazgveqe9ca.centralus-01.azurewebsites.net"
+]
 
 # Application definition
 
