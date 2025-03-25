@@ -6,7 +6,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 import joblib
 import os
-
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 # Full path to the dataset file
 DATASET_PATH = 'manual_dataset.csv'  # Update this path if needed
 
@@ -52,6 +53,8 @@ else:
     print("Model loaded from 'logistic_regression_model.pkl'")
 
 # View to handle the prediction form and result
+
+@csrf_exempt
 def predict_survival(request):
     if request.method == 'POST':
         # Get user input from the form
