@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-spmzg^nw7-j4(fsng_f(h%rkyf!lou1zu*d5$haa0@ix3dh(ll
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['logisticregression-ckh8bnazgveqe9ca.centralus-01.azurewebsites.net', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['logisticregression-ckh8bnazgveqe9ca.centralus-01.azurewebsites.net']
 
 
 # Application definition
